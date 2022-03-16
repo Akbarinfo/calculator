@@ -1,2 +1,123 @@
 /* MAIN PART  */
 
+.calcu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__box {
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+  }
+
+  &__header {
+    background-color: green;
+    text-align: right;
+    padding: 0 15px;
+    padding-top: 70px;
+    padding-bottom: 25px;
+  }
+
+  &__output {
+    font-size: 32px;
+    font-weight: 500;
+    color: #fff;
+
+  }
+
+  &__main {
+    position: relative;
+    padding-bottom: 10px;
+  }
+
+  &__btnbox {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__btnboxs {
+    &:hover .calcu__btn {
+      background-color: #2e8b8b98;
+    }
+
+    &:hover .calcu__equal {
+      background-color: #008000c9;
+      border-color: #008000c9;
+    }
+  }
+
+  &__btn {
+    position: relative;
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.658);
+    padding: 25px 35px;
+    padding-top: 35px;
+    transition: all 0.3s linear;
+  }
+
+  &__equal {
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 40px;
+    font-size: 32px;
+    color: #fff;
+    cursor: pointer;
+    padding: 70px 25px;
+    transition: all 0.3s linear;
+
+  }
+
+  &__btnleft {
+    position: absolute;
+    top: -25px;
+    right: 5px;
+    background-color: #a5a1a1;
+    border: 1px solid #a5a1a1;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    font-size: 36px;
+    color: #fff;
+    padding: 10px 25px;
+  }
+
+  &__btnboxs {
+    position: relative;
+   text-align: center;
+  }
+
+
+  // right box
+
+  &__boxright {
+    width: 300px;
+    height: 100%;
+    background-color: #a5a1a1;
+    position: absolute;
+    top: 0;
+    right: -295px;
+    transition: all 0.5 linear;
+  }
+
+  &__btnr {
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.658);
+    padding: 25px 35px;
+    padding-top: 35px;
+    transition: all 0.3s linear;
+  }
+
+  &__xy {
+    position: absolute;
+    top: 25px;
+    font-size: 25px;
+  }
+
+}

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&display=swap");
 @import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
 *,
 *::after,
@@ -10,7 +11,7 @@
 
 body {
   background-color: #fff;
-  font-family: sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-weight: 400;
   min-height: 100vh;
   display: -webkit-box;
@@ -44,6 +45,136 @@ html {
 }
 
 /* MAIN PART  */
+.calcu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.calcu__box {
+  width: 400px;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+}
+
+.calcu__header {
+  background-color: green;
+  text-align: right;
+  padding: 0 15px;
+  padding-top: 70px;
+  padding-bottom: 25px;
+}
+
+.calcu__output {
+  font-size: 32px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.calcu__main {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.calcu__btnbox {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.calcu__btnboxs:hover .calcu__btn {
+  background-color: #2e8b8b98;
+}
+
+.calcu__btnboxs:hover .calcu__equal {
+  background-color: #008000c9;
+  border-color: #008000c9;
+}
+
+.calcu__btn {
+  position: relative;
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: rgba(0, 0, 0, 0.658);
+  padding: 25px 35px;
+  padding-top: 35px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.calcu__equal {
+  background-color: green;
+  border: 1px solid green;
+  border-radius: 40px;
+  font-size: 32px;
+  color: #fff;
+  cursor: pointer;
+  padding: 70px 25px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.calcu__btnleft {
+  position: absolute;
+  top: -25px;
+  right: 5px;
+  background-color: #a5a1a1;
+  border: 1px solid #a5a1a1;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  font-size: 36px;
+  color: #fff;
+  padding: 10px 25px;
+}
+
+.calcu__btnboxs {
+  position: relative;
+  text-align: center;
+}
+
+.calcu__boxright {
+  width: 300px;
+  height: 100%;
+  background-color: #a5a1a1;
+  position: absolute;
+  top: 0;
+  right: -295px;
+  -webkit-transition: all 0.5 linear;
+  transition: all 0.5 linear;
+}
+
+.calcu__btnr {
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: rgba(0, 0, 0, 0.658);
+  padding: 25px 35px;
+  padding-top: 35px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.calcu__xy {
+  position: absolute;
+  top: 25px;
+  font-size: 25px;
+}
+
 /* FOOTER PART */
 .footer {
   background-color: #fff;
